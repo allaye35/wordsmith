@@ -10,13 +10,13 @@ jobs:
         service:
           - name: db
             context: ./db
-            tag: "sevrius/wordsmith:db"
+            tag: "allaye35/wordsmith:db"
           - name: words
             context: ./words
-            tag: "sevrius/wordsmith:words"
+            tag: "allaye35/wordsmith:words"
           - name: web
             context: ./web
-            tag: "sevrius/wordsmith:web"
+            tag: "allaye35/wordsmith:web"
 
     steps:
     - name: Checkout repository

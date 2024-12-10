@@ -1,0 +1,33 @@
+name: Build and Push Wordsmith Images
+
+on: [push]
+
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Build Docker images
+        run: |
+          docker build -t wordsmith-frontend ./frontend
+          docker build -t wordsmith-backend ./backend
+          docker build -t wordsmith-worker ./worker
+
+      - name: Login to Docker Hub
+        uses: docker/login-action@v2
+        with:
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
+
+      - name: Tag and Push Images
+        run: |
+          docker tag wordsmith-frontend votre_utilisateur/wordsmith-frontend:latest
+          docker tag wordsmith-backend votre_utilisateur/wordsmith-backend:latest
+          docker tag wordsmith-worker votre_utilisateur/wordsmith-worker:latest
+
+          docker push votre_utilisateur/wordsmith-frontend:latest
+          docker push votre_utilisateur/wordsmith-backend:latest
+          docker push votre_utilisateur/wordsmith-worker:latest

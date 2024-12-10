@@ -1,0 +1,28 @@
+version: '3.8'
+services:
+  web:
+    image: web
+    ports:
+      - "8080:80"
+    depends_on:
+      - words
+      - db
+   # volumes:
+    #  - C:/Users/allay/Documents/java_project/wordsmith/web/static:/app/static  # Volume pour le répertoire statique
+
+  words:
+    image: words
+    depends_on:
+      - db
+    #volumes:
+     # - C:/Users/allay/Documents/java_project/wordsmith/words:/app  # Volume pour le code source de l'API
+
+  db:
+    image: db
+    environment:
+      POSTGRES_DB: words_db
+    #volumes:
+     # - db_data:/var/lib/postgresql/data  # Volume pour la persistance des données de la BDD
+
+#volumes:
+  #db_data:  # Déclaration du volume

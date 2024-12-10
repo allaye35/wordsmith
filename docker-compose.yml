@@ -12,3 +12,4 @@ services:
   words:
     build: words
 
+

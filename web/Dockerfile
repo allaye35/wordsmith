@@ -20,4 +20,3 @@ COPY static static
 # receive signals correctly (allowing Ctrl-C to work
 # correctly, for instance).
 CMD ["./dispatcher"]
-

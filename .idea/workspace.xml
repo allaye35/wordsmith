@@ -1,31 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="3fc4218f-dcb1-409a-8daf-27197c4e0366" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.en.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.en.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.fr.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.fr.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/db/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/words.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db/words.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/web/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/dispatcher.go" beforeDir="false" afterPath="$PROJECT_DIR$/web/dispatcher.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/static/angular.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/static/angular.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/static/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/static/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/static/images/logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/web/static/images/logo.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/static/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/static/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/static/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/words/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/words/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/words/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/words/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/words/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/words/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
   "customColor": "",
@@ -42,6 +30,10 @@
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
@@ -62,7 +54,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1733833287386</updated>
-      <workItem from="1733833289263" duration="298000" />
+      <workItem from="1733833289263" duration="876000" />
     </task>
     <servers />
   </component>

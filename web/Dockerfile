@@ -1,16 +1,22 @@
-# Étape 1 : Compilation
+FROM golang:alpine
 
-
-FROM golang:alpine AS builder
-WORKDIR /build
+# Copy only the source file. We do not need the "static"
+# directory in the build phase.
 COPY dispatcher.go .
 
-RUN go build -o dispatcher dispatcher.go
-# Étape 2 : Exécution
+# Compile the Go program as instructed.
+RUN go build dispatcher.go
 
+# Start a new stage.
 FROM alpine
-WORKDIR /app
+
+# Copy the binary.
+# Note that the golang image uses /go as the WORKDIR.
+COPY --from=0 /go/dispatcher .
 COPY static static
-COPY --from=builder /build/dispatcher ./app
-EXPOSE 80
-CMD ["./app"]
+
+# Using the exec syntax (JSON list of strings) makes
+# sure that "dispatcher" will be PID 1, and will therefore
+# receive signals correctly (allowing Ctrl-C to work
+# correctly, for instance).
+CMD ["./dispatcher"]

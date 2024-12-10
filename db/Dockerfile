@@ -1,13 +1,12 @@
-# Utilisation de l'image officielle PostgreSQL basée sur Alpine
 FROM postgres:alpine
 
-# Copier le script SQL d'initialisation
+# The postgres official image has a "magic" entrypoint,
+# that will automatically execute scripts and load .sql
+# files located in that specific directory below.
 COPY words.sql /docker-entrypoint-initdb.d/words.sql
 
-# Configurer l'authentification PostgreSQL
+# The postgres official image requires us to either
+# set a password, or explicitly allow authentication
+# without passwords. The environment variable below
+# does the latter.
 ENV POSTGRES_HOST_AUTH_METHOD=trust
-
-# Optionnel : Si vous souhaitez définir d'autres variables d'environnement
-# ENV POSTGRES_DB=your_database_name
-# ENV POSTGRES_USER=your_username
-# ENV POSTGRES_PASSWORD=your_password
